@@ -88,3 +88,21 @@ hr
   //padding: 10px 20px;
   //padding-top: 50px; 
 }
+main
+{
+  position: relative;
+}
+main #FotoPerfil
+{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-image: url(img/Perfil2.jpg);
+  background-size: 150px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border-radius: 75px;
+  top: -50px;
+  right: 30%;
+  box-shadow: 0 0 15px #333, 0 0 2px #333;
+}
