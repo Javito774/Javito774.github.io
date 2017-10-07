@@ -1,7 +1,7 @@
 window.onscroll = function(){
 
 	var wScroll = this.pageYOffset;
-	if(wScroll<200)
+	if(wScroll<300)
 	{
 		document.querySelector('.logoNombre').style.transform="translate(0px, "+ wScroll/2 +"%)";
 		document.querySelector('.lineaLogo>hr').style.transform="rotate(-"+ (wScroll+90) +"deg)";
