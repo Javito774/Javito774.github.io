@@ -1,0 +1,90 @@
+:root
+{
+  font-size: 16px;
+}
+*
+{
+  padding: 0;
+  margin:0;
+}
+header
+{
+  background: url(img/marmol.jpg);
+  //background: #AEDBD1;
+  display: block;
+  position: relative;
+  height: 250px;
+  vertical-align: center;
+  overflow: hidden;
+}
+#pantalla
+{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #AEDBD1;
+  opacity: .6;
+}
+.logoNombre
+{
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  top: 50%;
+  margin-top: -50px;
+  z-index:2;
+}
+.logoNombre>h1
+{
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-weight: 400;
+}
+hr
+{
+  width: 80px;
+  margin: 0 auto;
+  transform: rotate(90deg);
+  transform-origin: center center;
+}
+.slogan1, .slogan2, .slogan3, .slogan4
+{
+  position: absolute;
+  font-weight: 100;
+  font-family: sans-serif;
+  font-size: 1.3rem;
+  padding: 5px 10px;
+  //box-shadow: 0px 0px 5px #5e5e5e;
+  //background: #8BE2EC;
+  //opacity: .5
+}
+.slogan1
+{
+  top: 60%;
+  left: 20%;
+  //padding: 15px;
+  //padding-left: 100px;
+}
+.slogan2
+{
+  bottom: 20%;
+  right: 25%;
+  //padding: 10px 18px;
+  //padding-bottom: 80px;
+}
+.slogan3
+{
+  top: 15%;
+  left: 30%;
+  //padding: 10px 20px;
+  //padding-top: 85px;
+}
+.slogan4
+{
+  top: 10%;
+  right: 33%;
+  //padding: 10px 20px;
+  //padding-top: 50px; 
+}
