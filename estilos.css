@@ -16,6 +16,7 @@ header
   height: 250px;
   vertical-align: center;
   overflow: hidden;
+  border-bottom: 2px solid #333;
 }
 #pantalla
 {
@@ -41,13 +42,6 @@ header
   text-transform: uppercase;
   font-family: sans-serif;
   font-weight: 400;
-}
-hr
-{
-  width: 80px;
-  margin: 0 auto;
-  transform: rotate(90deg);
-  transform-origin: center center;
 }
 .slogan1, .slogan2, .slogan3, .slogan4
 {
@@ -105,4 +99,5 @@ main #FotoPerfil
   top: -50px;
   right: 30%;
   box-shadow: 0 0 15px #333, 0 0 2px #333;
+  border: 2px solid #333;
 }
