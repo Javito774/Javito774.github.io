@@ -101,3 +101,43 @@ main #FotoPerfil
   box-shadow: 0 0 15px #333, 0 0 2px #333;
   border: 2px solid #333;
 }
+.container
+{
+  position: absolute;
+  top: 90px;
+  width: 40%;
+  left: 20%;
+  font-family: sans-serif;
+  color: #333;
+}
+.container>.titulo
+{
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 2.5rem;
+  line-height: 2;
+  padding-left: 50px;
+}
+.container>.contenido
+{
+  font-size: .9rem;
+  text-indent: 30px;
+  text-align: justify;
+}
+.contenido>.fecha
+{
+  font-style: italic;
+  color: #5a5a5a;
+}
+#aboutMe>h3
+{
+  transform: translate(-100px,0px);
+  opacity: 0;
+  transition:all .5s ease-in-out;
+}
+#aboutMe>p
+{
+  transform: translate(100px,0px);
+  opacity: 0;
+  transition:all .5s ease-in-out;
+}
