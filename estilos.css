@@ -108,7 +108,6 @@ main #FotoPerfil
 .container>.contenido
 {
   font-size: .9rem;
-  text-indent: 30px;
   text-align: justify;
 }
 .contenido>.fecha
