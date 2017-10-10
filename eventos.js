@@ -13,7 +13,9 @@ window.onscroll = function(){
 	if(wScroll<500)
 	{
 		document.querySelector('#aboutMe h3').style.transform="translate(-"+wScroll/8+"px,0px)";
-		document.querySelector('#aboutMe p').style.transform="translate("+wScroll/8+"px,0px)";
+		document.querySelector('#aboutMe p:nth-child(2)').style.transform="translate("+wScroll/8+"px,0px)";
+		document.querySelector('#aboutMe p:nth-child(3)').style.transform="translate("+wScroll/8+"px,0px)";
+		document.querySelector('#aboutMe p:nth-child(4)').style.transform="translate("+wScroll/8+"px,0px)";
 		document.querySelector('#FotoPerfil').style.backgroundPositionY="-"+wScroll/2+"px";
 	}
 	if(wScroll > document.querySelector('#Estudios').offsetTop)
@@ -48,11 +50,17 @@ window.onload = function()
 		document.querySelector('#aboutMe h3').style.transform="translate(0px,0px)";
 		document.querySelector('#aboutMe h3').style.opacity="1";
 		setTimeout(function() {
-			document.querySelector('#aboutMe p').style.transform="translate(0px,0px)";
-			document.querySelector('#aboutMe p').style.opacity="1";
+			document.querySelector('#aboutMe p:nth-child(2)').style.transform="translate(0px,0px)";
+			document.querySelector('#aboutMe p:nth-child(2)').style.opacity="1";
+			document.querySelector('#aboutMe p:nth-child(3)').style.transform="translate(0px,0px)";
+			document.querySelector('#aboutMe p:nth-child(3)').style.opacity="1";
+			document.querySelector('#aboutMe p:nth-child(4)').style.transform="translate(0px,0px)";
+			document.querySelector('#aboutMe p:nth-child(4)').style.opacity="1";
 			setTimeout(function(){
 				document.querySelector('#aboutMe h3').style.transition="none";
-				document.querySelector('#aboutMe p').style.transition="none";
+				document.querySelector('#aboutMe p:nth-child(2)').style.transition="none";
+				document.querySelector('#aboutMe p:nth-child(3)').style.transition="none";
+				document.querySelector('#aboutMe p:nth-child(4)').style.transition="none";
 			},500);
 		},200);
 	},500);
