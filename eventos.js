@@ -14,6 +14,32 @@ window.onscroll = function(){
 	{
 		document.querySelector('#aboutMe h3').style.transform="translate(-"+wScroll/8+"px,0px)";
 		document.querySelector('#aboutMe p').style.transform="translate("+wScroll/8+"px,0px)";
+		document.querySelector('#FotoPerfil').style.backgroundPositionY="-"+wScroll/2+"px";
+	}
+	if(wScroll > document.querySelector('#Estudios').offsetTop)
+	{
+		document.querySelector('#Estudios .titulo').style.transform="translate(0px,0px)";
+		document.querySelector('#Estudios .titulo').style.opacity="1";
+		setTimeout(function(){
+			document.getElementById('Estudios').getElementsByClassName('estudios')[0].style.transform="translate(0px,0px)";
+			document.getElementById('Estudios').getElementsByClassName('estudios')[0].style.opacity="1";
+			setTimeout(function(){
+				document.getElementById('Estudios').getElementsByClassName('estudios')[1].style.transform="translate(0px,0px)";
+				document.getElementById('Estudios').getElementsByClassName('estudios')[1].style.opacity="1";
+				setTimeout(function(){
+					document.getElementById('Estudios').getElementsByClassName('estudios')[2].style.transform="translate(0px,0px)";
+					document.getElementById('Estudios').getElementsByClassName('estudios')[2].style.opacity="1";
+					setTimeout(function(){
+						document.querySelector('#Estudios .estudios').style.transition="none";
+					},500);
+				},500);
+			},500);
+		},500);
+		setTimeout(function(){
+			document.querySelector('#Estudios .titulo').style.transition="none";
+		},500);
+		document.querySelector('#Estudios .estudios .img1').style.backgroundPositionY="-"+wScroll/2+"px";
+		document.querySelector('#Estudios .estudios .img2').style.backgroundPositionY=wScroll/2+"px";
 	}
 };
 window.onload = function()
