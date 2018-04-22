@@ -1,11 +1,3 @@
-@media screen and (max-width: 1060px) {
-
-	header>#FotoPerfil
-	{
-		width: 6em;
-		height: 6em;
-	}
-}
 header>#TituloCabecera>h1>span
 {
 	display: inline-block;

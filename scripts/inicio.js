@@ -1,6 +1,11 @@
 window.onload = function()
 {
-  window.scroll(0, 0);
+  if(screen.width<1024)
+  {
+    document.querySelector("header>#FotoPerfil").style.width="6em";
+    document.querySelector("header>#FotoPerfil").style.height="6em";
+    document.querySelector("header>#FotoPerfil").style.borderRadius="3em";
+  }
   animacionTitulo();
 }
 function animacionTitulo()
