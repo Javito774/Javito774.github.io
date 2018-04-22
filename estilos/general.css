@@ -1,0 +1,123 @@
+*
+{
+	margin: 0;
+	padding:0;
+}
+:root
+{
+	font-size: 16px;
+}
+body
+{
+	overflow-x: hidden;
+}
+main .fecha{
+	font-style: italic;
+	color: #5a5a5a !important;
+	font-size: .9rem;
+}
+header
+{
+	background: url(../img/marmol.jpg);
+	display: table;
+	width: 100%;
+	position: relative;
+	vertical-align: center;
+	border-bottom: 2px solid #333;
+	box-sizing: border-box;
+	height: 30vh;
+}
+header>h1
+{
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	vertical-align: middle;
+  box-sizing: border-box;
+	font-size: 3rem;
+	font-family: sans-serif;
+	font-weight: normal;
+	text-align: center;
+	color: #333;
+	background: rgba(174,219,209,0.6);
+}
+main
+{
+	background: #fff;
+	margin-bottom: 40vh; 
+}
+main>.bloque
+{
+	width: 100%;
+	position: relative;
+	padding-bottom: 3em;
+	text-align: center;
+}
+main>.bloque>article
+{
+	font-family: sans-serif;
+	min-width: 120px;
+	padding-top: 70px;
+}
+main>.bloque>article>h2
+{
+	text-transform: uppercase;
+	font-weight: 100;
+	font-size: 2.5rem;
+	font-family: sans-serif;
+  line-height: 2;
+  padding-left: 30%;
+	text-align: left;
+	color: #333;	
+}
+main>.bloque>article>div>p
+{
+	font-size: .9rem;
+	padding: .9em 0;
+	text-align: justify;
+	text-indent: 10px;
+	color: #333;
+	width: 40%;
+	margin-left: 25%;
+}
+footer
+{
+	padding: 3em 0;
+	position: fixed;
+	height: 40vh;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #333;
+   color: white;
+   text-align: center;
+	 z-index: -100;
+	 box-sizing:border-box;
+	font-family: sans-serif;
+}
+footer>div>h2
+{
+	font-weight: 100;
+	font-size: 2rem;
+	padding: .5em;
+}
+footer a
+{
+	color: #fff
+}
+footer>div>table
+{
+	margin: 0 auto;
+}
+footer table>tbody>tr>td
+{
+	padding: 0 .5em;
+}
+footer table>tbody>tr>td:nth-child(1)
+{
+	text-align: right;
+}
+footer table>tbody>tr>td:nth-child(2)
+{
+	text-align: left;
+}

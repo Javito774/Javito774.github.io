@@ -1,0 +1,11 @@
+main>.bloque:nth-child(2)>article>#contenedorPosts>a:nth-child(1)>div
+{
+	background-image: url("../posts/Quien soy yo/img/cabecera.jpg");
+	background-size: 15em;
+	background-position-x: 0px;
+}
+main>.bloque:nth-child(2)>article>#contenedorPosts>a:nth-child(2)>div
+{
+	background-image: url("../posts/La programacion/img/cabecera.jpg");
+  background-size: 15em;
+}
