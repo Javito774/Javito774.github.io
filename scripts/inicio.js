@@ -1,10 +1,9 @@
 window.onload = function()
 {
+  window.scroll(0, 0);
   if(screen.width<1024)
   {
-    document.querySelector("header>#FotoPerfil").style.width="6em";
-    document.querySelector("header>#FotoPerfil").style.height="6em";
-    document.querySelector("header>#FotoPerfil").style.borderRadius="3em";
+    document.querySelector("header>#FotoPerfil").style.display="none";
   }
   animacionTitulo();
 }
@@ -162,7 +161,7 @@ window.onscroll = function()
     document.querySelector("header").style.backgroundPositionX="-"+wScroll+"px";
     document.querySelector("header>#FotoPerfil").style.backgroundPositionY="-"+wScroll+"px";
   }
-  if(wScroll<400)
+  if(wScroll<400 && screen.width>1024)
   {
     document.querySelector("main>.bloque:nth-child(1)>article>h2").style.transform="translateX("+wScroll/8+"px)";
     document.querySelector("main>.bloque:nth-child(1)>article>div").style.transform="translateX(-"+wScroll/8+"px)";
