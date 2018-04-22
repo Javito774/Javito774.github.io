@@ -1,0 +1,94 @@
+header>#TituloCabecera>h1>span
+{
+	display: inline-block;
+}
+header>#FotoPerfil
+{
+	position: absolute;
+	width: 9em;
+	height: 9em;
+	background-image: url(../img/Perfil2.jpg);
+	background-size: 9em;
+	overflow: hidden;
+	border-radius: 4.5em;
+	bottom: -100px;
+	right: 30%;
+	box-shadow: 0 0 15px #333, 0 0 2px #333;
+	border: 2px solid #333;
+	transform: scale(0);
+	transition: transform 1s ease-in-out;
+	z-index: 1;
+}
+main{
+	background: #fff;
+}
+main>.bloque:nth-child(1)>article>h2
+{
+	transform: translateX(100px);
+	opacity: 0;
+}
+main>.bloque:nth-child(1)>article>div
+{
+	transform: translateX(-100px);
+	opacity: 0;
+}
+main>.bloque:nth-child(2)
+{
+	background:#AEDBD1;
+}
+main>.bloque>article>#contenedorPosts
+{
+	padding: 1em 0;
+	width: 70%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+main>.bloque>article>#contenedorPosts>a
+{
+	margin: 0 1.5em;
+	text-decoration: none;
+}
+main>.bloque>article>#contenedorPosts>a>div
+{
+	position: relative;
+	width: 15em;
+	height: 15em;
+  display: inline-block;
+	background: #fff;
+	border-radius: 7.5em;
+	overflow: hidden;
+}
+main>.bloque:nth-child(2)>article>#contenedorPosts>a:nth-child(1)>div
+{
+	background-image: url("posts/La programacion/cabecera.jpg");
+  background-size: 25em;
+	background-position-x: -80px;
+}
+main>.bloque:nth-child(2)>article>#contenedorPosts>a:nth-child(2)>div
+{
+	background-image: url("posts/Quien soy yo/cabecera.jpg");
+  background-size: 15em;
+}
+main>.bloque:nth-child(2)>article>#contenedorPosts>a>div>h2
+{
+	position: absolute;
+	width: 100%;
+	background: #fff;
+	color: #333;
+	font-weight: normal;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+	padding: 1em 0;
+	top: 4em;
+	opacity: .8;
+}
+main>.bloque:nth-child(2)>article>#contenedorPosts>a>div>p
+{
+	position: absolute;
+	width: 100%;
+	background: #fff;
+	padding: 1.5em 0;
+	bottom: 0;
+	color: #333;
+	opacity:.9;
+}

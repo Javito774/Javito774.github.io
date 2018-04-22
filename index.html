@@ -1,65 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="es-ES">
 <head>
-	<title>Javier Herrero</title>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="estilos.css"/>
+	<title>El blog de Javi</title>
+	<link rel="stylesheet" type="text/css" href="estilos/general.css">
+	<link rel="stylesheet" type="text/css" href="estilos/propio.css">
+	<link rel="stylesheet" type="text/css" href="estilos/posts.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0001, minimum-scale=1.0001">
 </head>
 <body>
 	<header>
-		<div class="logoNombre">
-			<h1>Javier</h1>
-			<h1>Herrero</h1>
-		</div>
-		<div id="pantalla"></div>
-		<h2 class="slogan1">Inspiracion</h2>
-		<h2 class="slogan2">Arte</h2>
-		<h2 class="slogan3">Diseño</h2>
-		<h2 class="slogan4">Estilo</h2>
+		<h1><span>I</span></h1>
+		<div id="FotoPerfil"></div>
 	</header>
 	<main>
-		<div id="FotoPerfil"></div>
-		<div class="container" id="aboutMe">
-			<h3 class="titulo">About me</h3>
-			<p>
-				Me llamo Javier Herrero estoy estudiando un doble grado de “Ingeniería de software y Tecnología de la sociedad para la información”.
-			</p>
-			<p>
-				He de decir que me encanta la tecnologia. También me gusta aprender nuevos idiomas y conocer culturas nuevas. Me encanta crear proyectos nuevos y hacerlos realidad, como esta pagina web.
-			</p>
-			<p> 
-				Soy una persona extrovertida, con capacidad de direccion si las cosas se tuercen en algun proyecto comun.
-				<br/><br/><span class="fecha">Actualizado: 08/10/2017</span>
-			</p>
+		<div class="bloque">
+			<article>
+				<!--DESCRIPCION DEL BLOG-->
+				<h2>El blog</h2>
+				<div>
+					<p>
+						Este blog no tiene un fin concreto, escribo sobre las cosas que me gustan y que creo que es emocionante contar mi experiencia y poder compartir mis aficiones con mas gente.
+					</p>
+					<p>
+						El blog está creado desde cero por mi, poco a poco iré; actualizándolo y mejorando cosas que actualmente no tengo desarrolladas, pues me falta formación, pero iré; aprendiendo más e irá a mejor.
+					</p>
+					<p>
+						Tengo un apartado de posts donde están los enlaces a los mismos, para que podéis leer lo que escribo. Al final de la pagina tenéis mis datos de contacto para cualquier sugerencia que queráis hacer, ya sea de temas que os gustaría que escriba o alguna idea para mejorar el blog.
+					</p>
+					<p class="fecha">Actualizado: 22/04/2018</p>
+				</div>
+			</article>
 		</div>
-		<div class="container" id="Estudios">
-			<div id="pantalla"></div>
-			<h3 class="titulo">Estudios y formacion</h3>
-			<div class="estudios">
-				<div>
-					<h3>2004-2014</h3>
-					<h4>Primaria y ESO</h4> 
+		<div class="bloque">
+			<article>
+				<h2>Posts</h2>
+				<div id="contenedorPosts">
+					<!--INSERTAR AQUI LOS POSTS CON LA ESTRUCTURA DENTRO DE LOS ENLACES-->
+					<a href="posts/Quien soy yo/post.html">
+						<div>
+							<h2>¿Quién soy yo?</h2>
+							<p>Ir al Post...</p>
+						</div>
+					</a>
+					<a href="posts/La programacion/post.html">
+						<div>
+							<h2>La Programación</h2>
+							<p>Ir al Post...</p>
+						</div>
+					</a>
 				</div>
-				<p>Estudie primaria y la eso en el colegio siglo xxi en Moratalaz, Madrid.</p>
-			</div>
-			<div class="estudios">
-				<div>
-					<h3>2014-2016</h3>
-					<h4>Bachillerato</h4> 
-				</div>
-				<p>El titulo de bachillerato, lo obtuve en el insitituto Principe Felipe, situado en el Barrio del Pilar, Madrid.</p>
-			</div>
-			<div class="estudios">
-				<div>
-					<h3>2016-Now</h3>
-					<h4>Universidad</h4> 
-				</div>
-				<p>Actualmente, estoy estudiando un doble grado de “Ingeniería de software y Tecnología de la sociedad para la información” en la Universidad Politecnica de Madrid, en el campus sur</p>
-			</div>
+				<div></div>
+			</article>
 		</div>
-		<div style="height: 1000px;"></div> 
 	</main>
-	<footer></footer>
-	<script src="eventos.js"></script>
+	<footer>
+		<div>
+			<h2>Contactar:</h2>
+			<table>
+				<tr>
+					<td>Nombre:</td>
+					<td>Javier Herrero Sánchez</td>
+				</tr>
+				<tr>
+					<td>Instagram:</td>
+					<td><a href="https://www.instagram.com/_soy_javi/">@_soy_javi</a></td>
+				</tr>
+				<tr>
+					<td>Correo electronico:</td>
+					<td><a href="https://javito774@gmail.com">javito774@gmail.com</a></td>
+				</tr>
+			</table>
+		</div>
+	</footer>
+	<script type="text/javascript" src="scripts/inicio.js"></script>
 </body>
 </html>
