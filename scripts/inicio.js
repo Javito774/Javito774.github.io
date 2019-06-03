@@ -1,6 +1,7 @@
 window.onload = function()
 {
   window.scroll(0, 0);
+  document.querySelector("header>#FotoPerfil").style.transition="none";
   if(screen.width<1024)
   {
     document.querySelector("header>#FotoPerfil").style.display="none";
@@ -74,6 +75,7 @@ function animacionTitulo()
                               {
                                 titulo.innerHTML="BIENVENIDO AL</br>BL<span>I</span>";
                                 transformacion;
+                                document.querySelector("header>#FotoPerfil").style.transition="transform 1s ease-in-out";
                                 setTimeout(function()
                                 {
                                   titulo.innerHTML="BIENVENIDO AL</br>BLO<span>I</span>";
